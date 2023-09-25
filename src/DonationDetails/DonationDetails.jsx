@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import swal from "sweetalert";
+import { saveDonation } from "../utility/localStorage";
 
 const DonationDetails = () => {
 
@@ -23,7 +25,8 @@ const DonationDetails = () => {
     } = campaign;
 
     const handleDonate = (campaign) =>{
-        console.log(campaign)
+        saveDonation(idInt)
+        swal("Good job!", "Your Donation is successful!", "success");
         
     }
 
