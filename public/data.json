@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/XyfxGPm/Health.png",
+        "title": "Clean Water Initiative",
+        "category": "Health",
+        "category_bg_color": "#0052FF33",
+        "card_bg_color": "#0052FF26",
+        "text_button_bg_color": "#0052FF",
+        "description": "Providing clean and safe drinking water to communities in need. Help us ensure access to clean water for everyone.",
+        "price": 50
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/cQTqsFm/Education.png",
+        "title": "Education for Children",
+        "category": "Education",
+        "category_bg_color": "#FF444A33",
+        "card_bg_color": "#FF444A26",
+        "text_button_bg_color": "#FF444A",
+        "description": "Supporting the education of disadvantaged children, helping them build a brighter future.",
+        "price": 25
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/S6z7QJQ/Food.png",
+        "title": "Food for All",
+        "category": "Food",
+        "category_bg_color": "#F8714733",
+        "card_bg_color": "#F8714726",
+        "text_button_bg_color": "#F87147",
+        "description": "Fighting hunger by distributing nutritious meals to underprivileged individuals and families.",
+        "price": 50
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/6sw67JG/clothing-donation-1.jpg",
+        "title": "Clothing Drive",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F33",
+        "card_bg_color": "#79C23F26",
+        "text_button_bg_color": "#79C23F",
+        "description": "Collecting and distributing clothing to those in need, helping them stay warm and comfortable.",
+        "price": 25
+    },
+    {
+        "id": 5,
+        "picture": "https://i.ibb.co/QbjDDVF/young-girl-lab-coat-with-stethoscope-her-chest.jpg",
+        "title": "Healthcare for All",
+        "category": "Health",
+        "category_bg_color": "#0052FF33",
+        "card_bg_color": "#0052FF26",
+        "text_button_bg_color": "#0052FF",
+        "description": "Providing healthcare services, medicine, and medical supplies to those in need.",
+        "price": 50
+    },
+    {
+        "id": 6,
+        "picture": "https://i.ibb.co/NjRm84N/medium-shot-girl-learning-math-school.jpg",
+        "title": "Scholarship Program",
+        "category": "Education",
+        "category_bg_color": "#FF444A33",
+        "card_bg_color": "#FF444A26",
+        "text_button_bg_color": "#FF444A",
+        "description": "Offering scholarships to underprivileged students, enabling them to pursue higher education.",
+        "price": 25
+    },
+    {
+        "id": 7,
+        "picture": "https://i.ibb.co/Yc4yJKz/full-shot-kids-exploring-natural-environment.jpg",
+        "title": "Community Kitchen",
+        "category": "Food",
+        "category_bg_color": "#F8714733",
+        "card_bg_color": "#F8714726",
+        "text_button_bg_color": "#F87147",
+        "description": "Operating community kitchens to provide hot meals to homeless individuals and families.",
+        "price": 50
+    },
+    {
+        "id": 8,
+        "picture": "https://i.ibb.co/VY5PXxT/clothing-donation-2.jpg",
+        "title": "Winter Clothing Drive",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F33",
+        "card_bg_color": "#79C23F26",
+        "text_button_bg_color": "#79C23F",
+        "description": "Collecting warm clothing items for the winter season to support those in need.",
+        "price": 25
+    },
+    {
+        "id": 9,
+        "picture": "https://i.ibb.co/qkjMbZr/smiling-children-with-stethoscope-healthcare-happiness-generative-ai.jpg",
+        "title": "Medical Outreach",
+        "category": "Health",
+        "category_bg_color": "#0052FF33",
+        "card_bg_color": "#0052FF26",
+        "text_button_bg_color": "#0052FF",
+        "description": "Organizing medical outreach programs to provide healthcare services in underserved areas.",
+        "price": 50
+    },
+    {
+        "id": 10,
+        "picture": "https://i.ibb.co/hgPC580/multi-ethnic-students-classroom-smiling-learning-together-generated-by-ai.jpg",
+        "title": "Literacy Program",
+        "category": "Education",
+        "category_bg_color": "#FF444A33",
+        "card_bg_color": "#FF444A26",
+        "text_button_bg_color": "#FF444A",
+        "description": "Promoting literacy and education among marginalized communities through workshops and resources.",
+        "price": 25
+    },
+    {
+        "id": 11,
+        "picture": "https://i.ibb.co/Yc4yJKz/full-shot-kids-exploring-natural-environment.jpg",
+        "title": "Emergency Food Aid",
+        "category": "Food",
+        "category_bg_color": "#F8714733",
+        "card_bg_color": "#F8714726",
+        "text_button_bg_color": "#F87147",
+        "description": "Providing emergency food assistance to families facing food insecurity during crises.",
+        "price": 50
+    },
+    {
+        "id": 12,
+        "picture": "https://i.ibb.co/CbHDBWH/clothing-donation-3.jpg",
+        "title": "Warmth for Winter",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F33",
+        "card_bg_color": "#79C23F26",
+        "text_button_bg_color": "#79C23F",
+        "description": "Distributing winter clothing items, blankets, and essentials to homeless individuals in the cold season.",
+        "price": 25
+    }
+]
