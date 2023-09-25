@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const CardDonation = ({ donation }) => {
-    const { id, picture, price, title, category, category_bg_color, card_bg_color, text_button_bg_color } = donation
+    const {  picture, price, title, category, category_bg_color, card_bg_color, text_button_bg_color } = donation
 
     return (
         <div>
@@ -14,12 +14,12 @@ const CardDonation = ({ donation }) => {
                     />
                 </div>
                 <div className="p-6">
-                    <div className='p-2 rounded w-1/2' style={{ background: `${category_bg_color}` , color: `${text_button_bg_color}`  }}>
+                    <div className='p-2 rounded w-1/2 mb-2' style={{ background: `${category_bg_color}` , color: `${text_button_bg_color}`  }}>
 
                         <h2 className='font-medium bg-cover'> {category}</h2>
                     </div>
-                    <p className='text-2xl font-semibold' style={{ color: `${text_button_bg_color}` }} >{title}</p>
-                    <p className='text-lg font-bold' style={{
+                    <p className='text-2xl font-semibold mb-2' style={{ color: `${text_button_bg_color}` }} >{title}</p>
+                    <p className='text-lg font-bold mb-2' style={{
                         color: `${text_button_bg_color} `}}>
                            ${price}
                             
@@ -27,7 +27,7 @@ const CardDonation = ({ donation }) => {
                     </p>
                     <a className="inline-block" href="#">
                         <button
-                            className="p-2 rounded text-white text-xl font-semibold" style={{
+                            className="p-2 rounded text-white text-xl font-semibold mt-4" style={{
                                 background: `${text_button_bg_color} `}}
                             type="button"
                         >
