@@ -5,24 +5,38 @@ import CardDonation from "../CardDonation/CardDonation";
 
 const Donation = () => {
     const campaigns = useLoaderData();
-    const [donations,setDonations] = useState([])
-    useEffect(()=>{
+    const [donations, setDonations] = useState([])
+    const [donationLength, setDonationLength] = useState(4);
+    useEffect(() => {
         const storedDonationId = getStoredDonation()
         console.log(storedDonationId)
-        if(storedDonationId.length > 0){
+        if (storedDonationId.length > 0) {
             const donatedCampaign = campaigns.filter(campaign => storedDonationId.includes(campaign.id))
-            
+
             setDonations(donatedCampaign)
         }
-    },[campaigns])
+    }, [campaigns]);
+
+ 
+
+    const handleSeeAll =()=>{
+        if(donations.length> 4){
+            setDonationLength(donations.length)
+        }
+        
+    }
+
     
 
     return (
         <div className="my-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {
-                donations.map(donation => <CardDonation key={Donation.id} donation={donation}></CardDonation>)
-            }
+                {
+                    donations.slice(0,donationLength).map((donation, idx) => <CardDonation key={idx} donation={donation}></CardDonation>)
+                }
+            </div>
+            <div className={ donations.length === donationLength ? 'hidden' : 'mt-10 flex justify-center'}>
+                <button onClick={handleSeeAll} className="bg-green-600 p-2 text-xl text-white font-semibold rounded">See All</button>
             </div>
         </div>
     );

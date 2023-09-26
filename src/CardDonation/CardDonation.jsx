@@ -37,6 +37,8 @@ const CardDonation = ({ donation }) => {
                     </a>
                 </div>
             </div>
+            
+
         </div>
     );
 };
