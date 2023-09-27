@@ -6,12 +6,12 @@ const CardDonation = ({ donation }) => {
 
     return (
         <div>
-            <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-clip-border text-gray-700 shadow" style={{ background: `${card_bg_color}` }}>
-                <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+            <div className="relative flex flex-col w-full max-w-[48rem] lg:flex-row rounded-xl bg-clip-border text-gray-700 shadow" style={{ background: `${card_bg_color}` }}>
+                <div className="relative m-0  lg:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
                     <img
                         src={picture}
                         alt="image"
-                        className=" object-cover h-full"
+                        className=" object-cover w-full lg:h-full"
                     />
                 </div>
                 <div className="p-6">

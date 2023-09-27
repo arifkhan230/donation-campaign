@@ -8,11 +8,11 @@ const Statistics = () => {
     const totalDonation = 12 - collectedDonation
     console.log(totalDonation)
     const data = [
-        { name: 'Group A', value: collectedDonation },
-        { name: 'Group B', value: totalDonation },
+        { name: 'Group A', value: totalDonation },
+        { name: 'Group B', value: collectedDonation},
     ];
 
-    const COLORS = ['#00C49F', '#FF444A'];
+    const COLORS = ['#FF444A','#00C49F'];
 
     const RADIAN = Math.PI / 180;
     const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, }) => {

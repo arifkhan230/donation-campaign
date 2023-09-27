@@ -30,14 +30,14 @@ const DonationDetails = () => {
     }
 
     return (
-        <div>
+        <div className="py-8 px-4">
             <div className="relative">
 
-                <img className="h-[500px] w-full" src={picture} alt="" />
+                <img className="lg:h-[500px] w-full" src={picture} alt="" />
 
                 <div className="w-full bg-[#0b0b0b80] z-50 absolute bottom-0 p-4 ">
                     <button onClick={()=>handleDonate(campaign)} className="p-4 rounded text-white text-xl font-semibold" style={{
-                        background: `${text_button_bg_color} `}}>Donate {price}</button>
+                        background: `${text_button_bg_color} `}}>Donate ${price}</button>
                 </div>
             </div>
             <h2 className="mt-12 mb-6 text-4xl font-bold">{title}</h2>
