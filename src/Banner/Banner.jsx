@@ -11,10 +11,10 @@ const Banner = ({handleOnsubmit}) => {
 
                 <form onSubmit={handleOnsubmit} className="mt-4 rounded">
                     <input
-                        className="border border-r-0 rounded lg:w-80 p-4" type="text" name="filter" id=""
+                        className="border  rounded rounded-r-none lg:w-80 w-40 p-4" type="text" name="filter" id="" placeholder='Search category ...'
                     />
                     <input
-                        className=" border w-32 text-white bg-red-400 p-4 rounded-r" type="submit" value="Submit"
+                        className=" border border-l-0 w-32 text-white bg-red-400 p-4 rounded-r" type="submit" value="Submit"
                     />
                 </form>
             </div>

@@ -1,9 +1,8 @@
-
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const DonationCard = ({ campaign }) => {
-    const { id, picture, title, category, category_bg_color, card_bg_color, text_button_bg_color } = campaign
-    // console.log(campaign)
+    const { id, picture, title, category, category_bg_color, card_bg_color, text_button_bg_color } = campaign;
     return (
         <div>
             <Link to={`/donations/${id}`}>
@@ -16,14 +15,15 @@ const DonationCard = ({ campaign }) => {
                             <h2 className='font-medium w-20'> {category}</h2>
                         </div>
                         <p className='text-xl font-semibold' style={{ color: `${text_button_bg_color}` }} >{title}</p>
-
                     </div>
                 </div>
             </Link>
         </div >
     );
 };
-
+DonationCard.propTypes = {
+    campaign: PropTypes.object
+}
 
 
 export default DonationCard;

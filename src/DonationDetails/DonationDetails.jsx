@@ -10,8 +10,7 @@ const DonationDetails = () => {
     const { id } = useParams()
     const idInt = parseInt(id)
     const campaigns = useLoaderData()
-    // console.log(campaigns)
-    // console.log(idInt)
+    
 
     useEffect(() => {
 
@@ -24,7 +23,7 @@ const DonationDetails = () => {
     const { picture, title, description, price, text_button_bg_color
     } = campaign;
 
-    const handleDonate = (campaign) =>{
+    const handleDonate = () =>{
         saveDonation(idInt)
         swal("Good job!", "Your Donation is successful!", "success");
         

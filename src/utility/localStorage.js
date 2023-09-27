@@ -8,8 +8,12 @@ const getStoredDonation = () =>{
 
 const saveDonation = id =>{
     const storedDonations = getStoredDonation();
-    storedDonations.push(id)
-    localStorage.setItem('donations', JSON.stringify(storedDonations))
+    const find = storedDonations.find(donation => donation === id)
+    if(!find){
+
+        storedDonations.push(id)
+        localStorage.setItem('donations', JSON.stringify(storedDonations))
+    }
 
 }
 export  {saveDonation , getStoredDonation}

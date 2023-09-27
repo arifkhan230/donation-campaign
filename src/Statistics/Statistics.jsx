@@ -12,7 +12,7 @@ const Statistics = () => {
         { name: 'Group B', value: totalDonation },
     ];
 
-    const COLORS = ['#0088FE', '#00C49F'];
+    const COLORS = ['#00C49F', '#FF444A'];
 
     const RADIAN = Math.PI / 180;
     const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, }) => {
@@ -30,15 +30,15 @@ const Statistics = () => {
 
     return (
         <div>
-            <div className='flex h-[500px] justify-center items-center mx-auto'>
+            <div className='flex  h-[500px] justify-center items-center mx-auto'>
                 <PieChart width={400} height={400}>
-                    <Pie
+                    <Pie width={600} height={600}
                         data={data}
                         cx="50%"
                         cy="50%"
                         labelLine={false}
                         label={renderCustomizedLabel}
-                        outerRadius={80}
+                        outerRadius={150}
                         fill="#8884d8"
                         dataKey="value"
                     >
@@ -48,14 +48,14 @@ const Statistics = () => {
                     </Pie>
                 </PieChart>
             </div>
-            <div className='flex gap-10 justify-center'>
-                <div className='flex items-center gap-4'>
+            <div className='flex flex-col lg:flex-row gap-10 justify-center'>
+                <div className='flex justify-center items-center gap-4'>
                     <h3 className='text-lg'>Your donation</h3>
-                    <div className='w-14 h-3 bg-green-500 rounded'></div>
+                    <div className='w-14 h-3 bg-[#00C49F] rounded'></div>
                 </div>
-                <div className='flex items-center gap-4'>
+                <div className='flex justify-center items-center gap-4'>
                     <h3 className='text-lg'>Total donation</h3>
-                    <div className='w-14 h-3 bg-red-500 rounded'></div>
+                    <div className='w-14 h-3 bg-[#FF444A] rounded'></div>
                 </div>
             </div>
         </div>

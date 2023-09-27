@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const CardDonation = ({ donation }) => {
-    const {  picture, price, title, category, category_bg_color, card_bg_color, text_button_bg_color } = donation
+    const {id,  picture, price, title, category, category_bg_color, card_bg_color, text_button_bg_color } = donation;
 
     return (
         <div>
@@ -26,6 +27,7 @@ const CardDonation = ({ donation }) => {
 
                     </p>
                     <a className="inline-block" href="#">
+                        <Link to={`/donations/${id}`}>
                         <button
                             className="p-2 rounded text-white text-xl font-semibold mt-4" style={{
                                 background: `${text_button_bg_color} `}}
@@ -34,6 +36,7 @@ const CardDonation = ({ donation }) => {
                             View Details
                             
                         </button>
+                        </Link>
                     </a>
                 </div>
             </div>
